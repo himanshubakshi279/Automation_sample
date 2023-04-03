@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+	<test name="Verify Login with correct details.">
+		<classes>
+			<class name="com.Automation.framework.testcases.TC_001_Login">
+				<methods>
+					<include name="tc_001_01_Login_as_End_User_Subscriber" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verify Add Brand with valid details.">
+		<classes>
+			<class name="com.Automation.framework.testcases.TC_002_Brand">
+				<methods>
+					<include name="tc_002_01_Add_New_Brand" />
+					<include name="tc_002_02_Add_Brand_Add_Address" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+</suite>
